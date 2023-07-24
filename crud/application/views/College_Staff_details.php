@@ -2,7 +2,7 @@
 <body>	
  <h4>Staff Details </h4> 
  
-<form action="http://localhost/crud/College/showData/" method="POST">
+<form action="<?=base_url('College/details/')?>" method="POST">
 <table>
 <tr>
 <td>Name</td>
@@ -17,7 +17,7 @@
 Address</td>
 <td><textarea name="Address" rows="5" cols="40"placeholder="Enter your Address"></textarea></td>
 </tr>
- <tr><td><label for="Department">Department:</label></td>
+ <tr><td><label >Department:</label></td>
  <td> <select name="Department" id="Department">
 <option value="">select</option>
 <option value="">COMPUTER SCIENCE</option>
@@ -41,7 +41,9 @@ Address</td>
 <tr>
 <td>  </td>
 
-<td><input type="submit"><br></td></tr>
+<td><input type="submit">
+<a href="<?=base_url('College/fetchData')?>" >view Record</a>
+<br></td></tr>
 </form>
 
 </body>
